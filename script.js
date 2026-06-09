@@ -14,3 +14,25 @@ const answerBtnsNodeList = document.querySelectorAll(".answer-btn")
 
 console.log(answerBtnsCollection);
 console.log(answerBtnsNodeList);
+
+const btnsArray = Array.from(answerBtnsNodeList)
+
+gameTitle.textContent = "⚡ Quick Fire Trivia"
+
+console.log("First question:", questionText.textContent)
+questionNumber.textContent = questionNumber.textContent.toUpperCase()
+
+
+const firstBtn = answerBtnsNodeList[0]
+const firstLi = firstBtn.parentElement
+
+console.log("The first button:", firstBtn)
+console.log("Its parent <li>:", firstLi)
+console.log("The <ul> that holds all buttons:", firstLi.parentElement)
+
+
+
+
+questionCard.classList.remove("answered")
+// Back to normal
+
